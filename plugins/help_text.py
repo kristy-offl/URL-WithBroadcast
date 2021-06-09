@@ -66,7 +66,9 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=mtb.START_TXT,
-        reply_to_message_id=update.message_id
+        disable_web_page_preview=True,
+        parse_mode="html",
+        reply_markup=mtb.START_BUTTONS
     )
 
 
