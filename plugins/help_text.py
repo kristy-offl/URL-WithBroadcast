@@ -31,34 +31,6 @@ def GetExpiryDate(chat_id):
     return expires_at
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
-async def help_user(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/help")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=mtb.HELP_USER,
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
-    )
-
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["me"]))
-async def get_me_info(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/me")
-    chat_id = str(update.from_user.id)
-    chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=mtb.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
-    )
-
-
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
@@ -78,7 +50,7 @@ async def upgrade(bot, update):
     TRChatBase(update.from_user.id, update.text, "/upgrade")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=mtb.UPGRADE_TEXT,
+        text=mtb.UPGRADE_TXT,
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
