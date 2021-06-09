@@ -18,7 +18,7 @@ else:
     from config import Config
 
 # the Strings used for this "thing"
-from translation import Translation
+from translation import mtb
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -37,7 +37,7 @@ async def help_user(bot, update):
     TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.HELP_USER,
+        text=mtb.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -52,7 +52,7 @@ async def get_me_info(bot, update):
     chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
+        text=mtb.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -65,7 +65,7 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT,
+        text=mtb.START_TEXT,
         reply_to_message_id=update.message_id
     )
 
@@ -76,7 +76,7 @@ async def upgrade(bot, update):
     TRChatBase(update.from_user.id, update.text, "/upgrade")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.UPGRADE_TEXT,
+        text=mtb.UPGRADE_TEXT,
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
