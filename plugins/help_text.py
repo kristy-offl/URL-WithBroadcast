@@ -18,7 +18,7 @@ else:
     from config import Config
 
 # the Strings used for this "thing"
-from translation import mtb
+from mtb import mtb
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
