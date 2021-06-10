@@ -118,7 +118,7 @@ async def save_photo(bot, update):
         )
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["deletethumbnail"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["deletethumb"]))
 async def delete_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -127,7 +127,7 @@ async def delete_thumbnail(bot, update):
             revoke=True
         )
         return
-    TRChatBase(update.from_user.id, update.text, "deletethumbnail")
+    TRChatBase(update.from_user.id, update.text, "deletethumb")
     download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     try:
         os.remove(download_location + ".jpg")
