@@ -49,9 +49,9 @@ async def echo(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="**Join My Updates Channel to use ME 😎 🤭**",
+                text="**In Order To Law You Must Be Join in My Updates Channel To Use Me 🎀**",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="🎉My Updates Channel🎉", url=f"https://t.me/{update_channel}")]
               ])
             )
             return
@@ -201,22 +201,7 @@ async def echo(bot, update):
                             )
                         )"""
                 else:
-                    # special weird case :\
-                    ikeyboard = [
-                        InlineKeyboardButton(
-                            "SVideo [" +
-                            "] ( " +
-                            approx_file_size + " )",
-                            callback_data=(cb_string_video).encode("UTF-8")
-                        ),
-                        InlineKeyboardButton(
-                            "DFile [" +
-                            "] ( " +
-                            approx_file_size + " )",
-                            callback_data=(cb_string_file).encode("UTF-8")
-                        )
-                    ]
-                inline_keyboard.append(ikeyboard)
+                    # special weird case 
             if duration is not None:
                 cb_string_64 = "{}|{}|{}".format("audio", "64k", "mp3")
                 cb_string_128 = "{}|{}|{}".format("audio", "128k", "mp3")
@@ -235,30 +220,22 @@ async def echo(bot, update):
             format_id = response_json["format_id"]
             format_ext = response_json["ext"]
             cb_string_file = "{}|{}|{}".format(
-                "file", format_id, format_ext)
+                "File", format_id, format_ext)
             cb_string_video = "{}|{}|{}".format(
-                "video", format_id, format_ext)
+                "Video", format_id, format_ext)
             inline_keyboard.append([
                 InlineKeyboardButton(
-                    "SVideo",
-                    callback_data=(cb_string_video).encode("UTF-8")
-                ),
-                InlineKeyboardButton(
-                    "DFile",
-                    callback_data=(cb_string_file).encode("UTF-8")
-                )
-            ])
             cb_string_file = "{}={}={}".format(
-                "file", format_id, format_ext)
+                "File", format_id, format_ext)
             cb_string_video = "{}={}={}".format(
-                "video", format_id, format_ext)
+                "Video", format_id, format_ext)
             inline_keyboard.append([
                 InlineKeyboardButton(
-                    "video",
+                    "Video",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
                 InlineKeyboardButton(
-                    "file",
+                    "File",
                     callback_data=(cb_string_file).encode("UTF-8")
                 )
             ])
