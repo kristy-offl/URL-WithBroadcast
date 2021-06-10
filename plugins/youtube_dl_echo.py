@@ -201,7 +201,7 @@ async def echo(bot, update):
                             )
                         )"""
                 else:
-                    # special weird case 
+                    # special weird case :\
             if duration is not None:
                 cb_string_64 = "{}|{}|{}".format("audio", "64k", "mp3")
                 cb_string_128 = "{}|{}|{}".format("audio", "128k", "mp3")
