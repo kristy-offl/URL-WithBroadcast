@@ -250,7 +250,7 @@ async def ddl_call_back(bot, update):
             )
     else:
         await bot.edit_message_text(
-            text=Translation.NO_VOID_FORMAT_FOUND.format("Incorrect Link"),
+            text=Translation.NO_VOID_FORMAT_FOUND.format("**Given a Incorrect Link 👀**"),
             chat_id=update.message.chat.id,
             message_id=update.message.message_id,
             disable_web_page_preview=True
@@ -290,10 +290,13 @@ File Size: {}""".format(url, humanbytes(total_length))
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
                         current_message = """**Download Status**
-URL: {}
-File Size: {}
-Downloaded: {}
-ETA: {}""".format(
+**🔮 Given URL** : {}
+
+**📍 Size** : {}
+
+**📥 Downloaded** : {}
+
+**⏰ Estimated Time** : {}""".format(
     url,
     humanbytes(total_length),
     humanbytes(downloaded),
