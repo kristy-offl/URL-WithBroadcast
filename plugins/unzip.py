@@ -23,7 +23,6 @@ else:
 from translation import Translation
 
 import pyrogram
-import Filters
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 from helper_funcs.chat_base import TRChatBase
