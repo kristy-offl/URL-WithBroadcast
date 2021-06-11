@@ -49,9 +49,9 @@ async def echo(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="**In Order To Law You Must Be Join in My Updates Channel To Use Me 🎀**",
+                text="**Join My Updates Channel to use ME 😎 🤭**",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="🎉My Updates Channel🎉", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
               ])
             )
             return
@@ -235,22 +235,30 @@ async def echo(bot, update):
             format_id = response_json["format_id"]
             format_ext = response_json["ext"]
             cb_string_file = "{}|{}|{}".format(
-                "File", format_id, format_ext)
+                "file", format_id, format_ext)
             cb_string_video = "{}|{}|{}".format(
-                "Video", format_id, format_ext)
+                "video", format_id, format_ext)
             inline_keyboard.append([
                 InlineKeyboardButton(
-            cb_string_file = "{}={}={}".format(
-                "File", format_id, format_ext)
-            cb_string_video = "{}={}={}".format(
-                "Video", format_id, format_ext)
-            inline_keyboard.append([
-                InlineKeyboardButton(
-                    "Video",
+                    "SVideo",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
                 InlineKeyboardButton(
-                    "File",
+                    "DFile",
+                    callback_data=(cb_string_file).encode("UTF-8")
+                )
+            ])
+            cb_string_file = "{}={}={}".format(
+                "file", format_id, format_ext)
+            cb_string_video = "{}={}={}".format(
+                "video", format_id, format_ext)
+            inline_keyboard.append([
+                InlineKeyboardButton(
+                    "video",
+                    callback_data=(cb_string_video).encode("UTF-8")
+                ),
+                InlineKeyboardButton(
+                    "file",
                     callback_data=(cb_string_file).encode("UTF-8")
                 )
             ])
