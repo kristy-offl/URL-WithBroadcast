@@ -23,11 +23,11 @@ else:
 from translation import Translation
 
 import pyrogram
+import Filters
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
-
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["unzip"]))
 async def unzip(bot, update):
