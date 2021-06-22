@@ -37,7 +37,7 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=mtb.START_TXT,
+        text=mtb.START_TXT.format(m.from_user.mention),
         disable_web_page_preview=True,
         parse_mode="html",
         reply_markup=mtb.START_BUTTONS
