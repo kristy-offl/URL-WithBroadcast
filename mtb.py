@@ -4,28 +4,38 @@ class mtb(object):
   
   START_TXT = """
   
-<b>Hello {},👋
-=>I Can Rename Files With Permanant Thumbnail Support 💥
-=>I Can Convert Files Too 🙂
+<i>Hello {},👋
+
+I'm a Telegram URL Uploader Bot
+
+I Can Upload Direct Link To Telegram Without Using Your Data File Limit Is 1.95GB
+
 Use help Button For More Details
-🧨Devoloped & Maintained By : : <a href='https://t.me/Itz_Me_Malayali'>✯°• Kʀɪsᴛʏ Oꜰꜰᴄɪᴀʟ •°✯ 『★Tᴍ★』 #Broken Sed Life 💔</a></b>
+🧨Devoloped & Maintained By : : <a href='https://t.me/Itz_Me_Malayali'>✯°• Kʀɪsᴛʏ Oꜰꜰᴄɪᴀʟ •°✯ 『★Tᴍ★』 #Broken Sed Life 💔</a></i>
   """
   HELP_TXT = """
   
   **Hey 🙋‍♂️It's Not Complicated To Use Me.
-➠ Just Send Me A File
-➠ Select Your Options
-➠ Wait Until Your Requests Gets Complete Don't Spam Here
+
+➩ Send Me The Custom Thumbnail To Save It Permanently.
+
+➩ Now Send Me The Ytdl Or Direct Link.
+
+➩ Select The Desired Option.
+
+➩ Then Be Relaxed Your File Will Be Uploaded Soon..
+
 <\ Available Commands />
 • /start - 🎉 Start Message
 • /showthumb - 🎆 To Saved Custom Permanent thumbnail
 • /delthumb - ❌  Clears Saved Custom Thumbnail To Default
+
 🎉Powerded By : @HiroshiBots**
 """
   
   ABOUT_TXT = """
   
-<b>🎆My Name : <a href='https://t.me/RenameMLBot'>Rename Hiroshi Bot</a></b>\n
+<b>🎆My Name : <a href='https://t.me/URLHiroshiBot'>URL Uploader Hiroshi Bot</a></b>\n
 <b>👩‍🦽Version : <a href='https://t.me/RenameMLBot'>0.9.2 beta</a></b>\n
 <b>⛑Source : <a href='https://t.me/WantSourceCode'>Click Here</a></b>\n
 <b>⚙️Server : <a href='https://heroku.com'>Heroku</a></b>\n
