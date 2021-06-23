@@ -141,7 +141,7 @@ async def delete_thumbnail(bot, update):
     )
 
 
-@Client.on_message(filters.private & filters.command(["showthumb"]))
+@pyrogram.Client.on_message(filters.private & filters.command(["showthumb"]))
 async def show_thumb(bot, update):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
     if not os.path.exists(thumb_image_path):
