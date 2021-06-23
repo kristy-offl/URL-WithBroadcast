@@ -10,7 +10,7 @@ class Translation(object):
     DOWNLOAD_START = "<i>DownloadIng To My Server</i>"
     UPLOAD_START = "<i>Trying To Upload</i>"
     RCHD_TG_API_LIMIT = "**Downloaded In {} seconds.**\n**Detected File Size: {}**\n**Sorry But, I Cannot Upload Files Greater Than 1.95GB Due To Telegram API Limitations.**"
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thanks For Using Meh!** \n**Share & Support @HiroshiBots**"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thanks For Using Meh!** \n**Share :- @HiroshiBots**"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/HiroshiBotsSupport'>Hiroshi Bots Support</a>"
     SAVED_CUSTOM_THUMB_NAIL = "**Custom Thumbnail Saved !🌃**"
