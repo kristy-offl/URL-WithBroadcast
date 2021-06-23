@@ -26,11 +26,6 @@ Use help Button For More Details
 
 ➩ Then Be Relaxed Your File Will Be Uploaded Soon..
 
-<\ Available Commands />
-• /start - 🎉 Start Message
-• /showthumb - 🎆 To Saved Custom Permanent thumbnail
-• /delthumb - ❌  Clears Saved Custom Thumbnail To Default
-
 🎉Powerded By : @HiroshiBots**
 """
   
