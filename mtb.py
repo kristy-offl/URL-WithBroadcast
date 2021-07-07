@@ -18,12 +18,11 @@ Use help Button For More Details
   
   **Hey 🙋‍♂️It's Not Complicated To Use Me.
 
+I Can Support zippyshare, filesim, hxfile, fembed, mediafire, sbembed, streamtape, uservideo support Too
+
 ➩ Send Me The Custom Thumbnail To Save It Permanently.
-
 ➩ Now Send Me The Ytdl Or Direct Link.
-
 ➩ Select The Desired Option.
-
 ➩ Then Be Relaxed Your File Will Be Uploaded Soon..
 
 🎉Powerded By : @HiroshiBots**
@@ -32,7 +31,7 @@ Use help Button For More Details
   ABOUT_TXT = """
   
 <b>🎆My Name : <a href='https://t.me/URLHiroshiBot'>URL Uploader Hiroshi Bot</a></b>\n
-<b>👩‍🦽Version : <a href='https://t.me/RenameMLBot'>0.9.2 beta</a></b>\n
+<b>👩‍🦽Version : <a href='https://t.me/URLHiroshiBot'>0.9.2 beta</a></b>\n
 <b>⛑Source : <a href='https://t.me/WantSourceCode'>Click Here</a></b>\n
 <b>⚙️Server : <a href='https://heroku.com'>Heroku</a></b>\n
 <b>🛡Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>\n
